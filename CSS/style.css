@@ -92,7 +92,7 @@ li {
 header {
     position: sticky;
     top: 20px;
-    z-index: 999;
+    z-index: 9;
 }
 
 header .container .navbar {
@@ -304,8 +304,8 @@ header .container .logo img {
     margin-top: -10px;
     background-color: #171717bd;
     position: relative;
-    border-top: 1px solid #777;
-    border-bottom: 1px solid #777;
+    border-top: 1px solid #77777748;
+    border-bottom: 1px solid #77777748;
 }
 
 @media (max-width: 992px) {
@@ -331,7 +331,7 @@ header .container .logo img {
 }
 
 .company .container .box:not(:last-child) {
-    border-right: 1px solid #777;
+    border-right: 1px solid #77777748;
 }
 
 @media (max-width: 992px) {
@@ -346,6 +346,7 @@ header .container .logo img {
 .company .container .box img {
     width: 180px;
     max-width: 100%;
+    height: 100%;
 }
 
 /* end company */
@@ -447,11 +448,13 @@ header .container .logo img {
 .portfolio .tabs .active {
     color: var(--primary);
 }
-.container .content .Motion{
+.container .content .box {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
+}
+.container .content .box:not(:first-child){
+    display: none;
 }
 .content .video  {
     width: 450px;
@@ -460,6 +463,12 @@ header .container .logo img {
     border: 1px solid var(--primary);
     background-color: #000000;
     position: relative;
+    cursor: pointer;
+}
+.content .video img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
 }
 
 .play-icon i {
@@ -480,6 +489,7 @@ header .container .logo img {
 .lamp-video {
     height: 82px;
 }
+
 /* end portfolio */
 
 

@@ -69,10 +69,10 @@
                 <img src="images/P2.png">
             </div>
             <div class="box">
-                <img src="images/P3.png">
+                <img src="images/P4.png">
             </div>
             <div class="box">
-                <img src="images/P4.png">
+                <img src="images/P3.png">
             </div>
         </div>
     </section>
@@ -104,20 +104,54 @@
         <h1 class="main-title">Portfolio</h1>
         <div class="container">
             <lu class="tabs">
-                <li class="active">Motion</li>
-                <li>Brand</li>
-                <li>Graphic</li>
+                <li class="active" data-cont=".Motion">Motion</li>
+                <li data-cont=".Brand">Brand</li>
+                <li data-cont=".Graphic">Graphic</li>
             </lu>
             <div class="content">
-                <div class="Motion">
+                <div class="box  Motion">
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
+                        <img src="images/Screenshot 2023-05-13 at 12.10.37 PM.png">
                         <div class="play-icon">
                             <i class="fa-solid fa-play"></i>
                         </div>
                     </div>
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
+                        <img src="images/Screenshot 2023-05-13 at 12.09.58 PM.png">
+                        <div class="play-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box Brand">
+                    <div class="video">
+                        <div class="lamps lamp-center lamp-video"></div>
+                        <img src="images/Screenshot 2023-05-13 at 12.09.58 PM.png">
+                        <div class="play-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="lamps lamp-center lamp-video"></div>
+                        <img src="images/Screenshot 2023-05-13 at 12.10.37 PM.png" >
+                        <div class="play-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box Graphic">
+                    <div class="video">
+                        <div class="lamps lamp-center lamp-video"></div>
+                        <img src="images/Screenshot 2023-05-13 at 12.10.37 PM.png">
+                        <div class="play-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="lamps lamp-center lamp-video"></div>
+                        <img src="images/Screenshot 2023-05-13 at 12.09.58 PM.png" >
                         <div class="play-icon">
                             <i class="fa-solid fa-play"></i>
                         </div>
@@ -127,5 +161,25 @@
         </div>
     </section>
     <!-- end portfolio -->
+    <script>
+        let tabs = document.querySelectorAll(".tabs li");
+        let tabsArray = Array.from(tabs);
+        let divs = document.querySelectorAll(".content > div");
+        let divsArray = Array.from(divs);
+
+        tabsArray.forEach((ele) => {
+            ele.addEventListener("click", function (e) {
+                tabsArray.forEach((ele) => {
+                    ele.classList.remove("active");
+            });
+                e.currentTarget.classList.add("active");
+                divsArray.forEach((div) => {
+                    div.style.display = "none";
+                });
+                document.querySelector(e.currentTarget.dataset.cont).style.display = "flex";
+            });
+        });
+    </script>
+
 </body>
 </html>
