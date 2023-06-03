@@ -331,6 +331,7 @@ header .container .logo img {
 .company .container .box:not(:last-child) {
     border-right: 2px solid #777;
 }
+
 @media (max-width: 992px) {
     .company .container .box:not(:last-child) {
         border-right: none;
@@ -339,6 +340,7 @@ header .container .logo img {
         flex-wrap: wrap;
     }
 }
+
 .company .container .box img {
     width: 180px;
     max-width: 100%;
@@ -352,18 +354,21 @@ header .container .logo img {
     padding-bottom: var(--padding-bottom);
     position: relative;
 }
+
 .services .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
+
 @media (max-width: 992px) {
     .services .container {
         justify-content: center;
         gap: 50px;
     }
 }
+
 .services .container .box {
     margin-top: 50px;
     width: 300px;
@@ -375,6 +380,7 @@ header .container .logo img {
     border: 2px solid #353535;
     transition: var(--transition);
 }
+
 @media (max-width: 360px) {
     .services .container .box{
         width: 100%;
@@ -383,23 +389,28 @@ header .container .logo img {
         font-size: 30px;
     }
 }
+
 .services .container .box:hover {
     transform: translateY(-3px);
 }
+
 .services .container .box img {
     margin-top: 110px;
     width: 50px;
     max-width: 100%;
 }
+
 .services .container .box .img-ma {
     padding-top: 25px;
 }
+
 .services .container .box .text {
     font-size: 22px;
     font-weight: 400;
     color: var(--light);
     margin-top: 10px;
 }
+
 .services .container .box p {
     font-size: 13px;
     font-weight: 300;
@@ -407,6 +418,7 @@ header .container .logo img {
     line-height: 1.4;
     margin-top: 18px;
 }
+
 /* end services */
 
 
