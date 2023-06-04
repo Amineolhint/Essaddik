@@ -144,6 +144,7 @@ header .container .navbar li .active {
 }
 
 header .container .logo img {
+    padding-top: 4px;
     width: 40px;
     max-width: 100%;
 }
@@ -194,6 +195,7 @@ header .container .logo img {
 .landing .line-right .text {
     writing-mode: vertical-rl;
 }
+
 @media (max-width: 768px) {
     .landing .line-right {
         display: none;
