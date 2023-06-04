@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS -->
+        <!------------- CSS ------------->
         <link rel="stylesheet" href="CSS/style.css" />
         <link rel="stylesheet" href="CSS/normalize.css" />
-        <!-- Font Awesome -->
+        <!------------- Font Awesome ------------->
         <link rel="stylesheet" href="CSS/all.min.css" />
-        <!-- Google Fonts -->
+        <!------------- Google Fonts ------------->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,11 +17,16 @@
         <link rel="website icon" href="favicon-klia.png">
 </head>
 <body>
-    <!-- start header -->
+
+
+
+    <!------------- START HEADER ------------->
+    
+    
     <header>
         <div class="container">
             <ul class="navbar">
-                <li><a href="#Home">HOME</a></li>
+                <li><a href="#Home" class="active">HOME</a></li>
                 <li><a href="#Services">SERVICES</a></li>
                 <a class="logo" href="#Home"><img src="images/Group 1.png"></a>
                 <li><a href="#Work">WORK</a></li>
@@ -29,8 +34,12 @@
             </ul>
         </div>
     </header>
-    <!-- end header -->
-    <!-- start landing  -->
+    
+    
+    <!------------- END HEADER ------------->
+    <!------------- START LANDING  ------------->
+    
+
     <section class="landing" id="Home">
         <div class="line-right">
             <div class="line"></div>
@@ -57,27 +66,36 @@
             </div>
         </div>
     </section>
-    <!-- end landing  -->
-    <!-- start company -->
+
+
+    <!------------- END LANDING  ------------->
+    <!------------- START COMPANY ------------->
+    
+    
     <section class="company">
         <div class="lamps lamp-center"></div>
         <div class="container">
             <div class="box">
-                <img src="images/P1.png">
+                <img src="images/c1.png">
             </div>
             <div class="box">
-                <img src="images/P2.png">
+                <img src="images/c2.png">
             </div>
             <div class="box">
-                <img src="images/P4.png">
+                <img src="images/c3.png">
             </div>
             <div class="box">
-                <img src="images/P3.png">
+                <img src="images/c4.png">
             </div>
         </div>
     </section>
-    <!-- end company -->
-    <!-- start services -->
+    
+    
+    <!------------- END COMPANY ------------->
+    <!------------- START SERVICES ------------->
+    
+    
+
     <section class="services" id="Services">
         <h1 class="main-title">My Specialization</h1>
         <div class="container">
@@ -98,8 +116,12 @@
             </div>
         </div>
     </section>
-    <!-- end services -->
-    <!-- start portfolio -->
+
+
+    <!------------- END SERVICES ------------->
+    <!------------- START PORTFOLIO ------------->
+
+
     <section class="portfolio" id="Work">
         <h1 class="main-title">Portfolio</h1>
         <div class="container">
@@ -112,74 +134,75 @@
                 <div class="box  Motion">
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
-                        <img src="images/Screenshot 2023-05-13 at 12.10.37 PM.png">
+                        <img src="images/ww1.png">
                         <div class="play-icon">
-                            <i class="fa-solid fa-play"></i>
+                            <i class="fa-brands fa-youtube"></i>
                         </div>
                     </div>
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
-                        <img src="images/Screenshot 2023-05-13 at 12.09.58 PM.png">
+                        <img src="images/ww3.png">
                         <div class="play-icon">
-                            <i class="fa-solid fa-play"></i>
+                            <i class="fa-brands fa-youtube"></i>
                         </div>
                     </div>
                 </div>
                 <div class="box Brand">
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
-                        <img src="images/Screenshot 2023-05-13 at 12.09.58 PM.png">
-                        <div class="play-icon">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
+                        <img src="images/k1.png">
                     </div>
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
-                        <img src="images/Screenshot 2023-05-13 at 12.10.37 PM.png" >
-                        <div class="play-icon">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
+                        <img src="images/k2.png" >
                     </div>
                 </div>
                 <div class="box Graphic">
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
-                        <img src="images/Screenshot 2023-05-13 at 12.10.37 PM.png">
-                        <div class="play-icon">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
+                        <img src="images/ww4 (1).png">
                     </div>
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
-                        <img src="images/Screenshot 2023-05-13 at 12.09.58 PM.png" >
-                        <div class="play-icon">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
+                        <img src="images/ww4 (2).png" >
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end portfolio -->
-    <script>
-        let tabs = document.querySelectorAll(".tabs li");
-        let tabsArray = Array.from(tabs);
-        let divs = document.querySelectorAll(".content > div");
-        let divsArray = Array.from(divs);
 
-        tabsArray.forEach((ele) => {
-            ele.addEventListener("click", function (e) {
-                tabsArray.forEach((ele) => {
-                    ele.classList.remove("active");
-            });
-                e.currentTarget.classList.add("active");
-                divsArray.forEach((div) => {
-                    div.style.display = "none";
-                });
-                document.querySelector(e.currentTarget.dataset.cont).style.display = "flex";
-            });
-        });
-    </script>
 
+    <!------------------- END PORTFOLIO ------------>
+    <!--------------- START TESTIMONIALS ------------->
+
+
+    <section class="testimonials">
+        <h1 class="main-title">Testimonials</h1>
+        <div class="container">
+            <div class="arrow-left"><i class="fa-solid fa-angles-left"></i></div>
+            <div class="box">
+                <img src="images/avatar-05.png" >
+                <div class="text">
+                    <p>Working with Klia was amazing, I didn't request the normal
+                        storyboard type video. I requested something a little
+                        different but he did not fail to provide me with great service
+                        and an excellent product.</p>
+                    <h2>JOHN MENSON</h2>
+                </div>
+            </div>
+            <div class="arrow-right"><i class="fa-solid fa-angles-right"></i></div>
+        </div>
+
+    </section>
+
+
+
+    <!------------ END TESTIMONIALS ------------->
+
+
+
+    <!------------- JS  ------------->
+
+    <script src="main.js" ></script>
 </body>
 </html>
