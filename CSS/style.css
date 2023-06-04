@@ -245,6 +245,12 @@ header .container .logo img {
     flex-basis: 50%;
     position: relative;
 }
+.landing .container .image .mask {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    z-index: -1;
+}
 
 @media (max-width: 992px) {
     .landing .container .image {
@@ -256,12 +262,13 @@ header .container .logo img {
 }
 
 .landing .container .image .lamp-right {
-    right: 160px;
-    top: 300px;
+    right: 200px;
+    bottom: 190px;
 }
 
 .landing .container .image img {
     max-width: 100%;
+    position: relative;
 }
 
 .landing .container .title span img {
