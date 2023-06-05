@@ -40,3 +40,19 @@ $(document).ready(function(){
         nav: true,
     });
 });
+
+// send message Email
+
+function sendEmail(){
+    Email.send({
+        SecureToken : "9e12ff21-55d9-49f5-b732-7819da239bb7",
+        To : 'essaddikkliaa@gmail.com',
+        From : "essaddikkliaa@gmail.com",
+        Subject : "test email",
+        Body : "name: " + document.getElementById("name").value
+                + "<br> email" + document.getElementById("email").value
+                + "<br> message" + document.getElementById("message").value
+    }).then(
+    message => alert("sent succesfully")
+);
+}

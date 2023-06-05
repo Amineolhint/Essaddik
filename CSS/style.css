@@ -90,6 +90,7 @@ li {
     color: var(--light);
     font-weight: 600;
     letter-spacing: 1px;
+    margin-bottom: 50px;
 
 }
 
@@ -331,9 +332,12 @@ header .container .logo img {
 .company {
     margin-top: -10px;
     background-color: #171717bd;
+    padding-top: 20px;
+    padding-bottom: 20px;
     position: relative;
     border-top: 1px solid #77777748;
     border-bottom: 1px solid #77777748;
+    overflow: hidden;
 }
 
 @media (max-width: 992px) {
@@ -342,44 +346,45 @@ header .container .logo img {
     }
 }
 
-.lamp-center {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.company .container {
+.company .content {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+
+    animation: move-slide 25s linear infinite ;
+    width: calc(350px * 9);
 }
 
-.company .container .box {
-    padding: 15px 40px;
+.company .content .box {
+    padding: 10px 60px;
+    width: 276px;
 }
 
-.company .container .box:not(:last-child) {
-    border-right: 1px solid #77777748;
-}
-
-@media (max-width: 992px) {
-    .company .container .box:not(:last-child) {
-        border-right: none;
+@keyframes move-slide {
+    0% {
+        transform: translateX(0);
     }
-    .company .container {
-        flex-wrap: wrap;
+    33% {
+        transform: translateX(calc(-250px * 3.5));
     }
+    66% {
+        transform: translateX(-250px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
 }
 
-.company .container .box img {
-    width: 180px;
+.company .content .box img {
     max-width: 100%;
     height: 100%;
 }
 
 
+
 /* -----------END COMPANY--------- */
 /* -----------START SERVICES------ */
+
 
 
 .services {
@@ -527,14 +532,6 @@ header .container .logo img {
     transform: translate(-50%, -50%);
     font-size: 40px;
     color: var(--dark);
-    width: 50px;
-    height: 50px;
-    background-color: #00C517;
-    box-shadow: 0 0 20px 20px #00C517;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: var(--transition);
 }
 
@@ -591,10 +588,28 @@ header .container .logo img {
 
 .lamp-video {
     height: 82px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.content .box .row {
+    transition: var(--transition);
+}
+
+.content .box .row:hover {
+    transform: translateY(-10px); 
+}
+
+
+
 
 /* -----------END PORTFOLIO------------ */
 /* -----------START TESTIMONIALS------- */
+
+
+
 
 
 .testimonials {
@@ -726,6 +741,7 @@ header .container .logo img {
     font-size: 40px;
     cursor: pointer;
 }
+
 .arrow-right {
     position: absolute;
     top: 50%;
@@ -751,15 +767,19 @@ header .container .logo img {
 
 
 
+
+
 /* -----------END TESTIMONIALS--------- */
 /* -----------START CONTACT--------- */
+
+
 
 
 
 .contact {
     background-color: var(--primary);
     border-radius: 50px 50px 0 0;
-    padding-top: var(--padding-top);
+    padding-top: 30px;
     padding-bottom: var(--padding-bottom);
     position: relative;
 }
@@ -845,6 +865,7 @@ header .container .logo img {
     line-height: 29px;
     position: absolute;
     right: 0;
+    cursor: pointer;
 }
 
 .contact .container .maps {
@@ -857,7 +878,11 @@ header .container .logo img {
 
 
 
+
 /* -----------START FOOTER--------- */
+
+
+
 
 
 footer {
@@ -879,29 +904,6 @@ footer .container span {
 
 
 /* -----------END FOOTER--------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
