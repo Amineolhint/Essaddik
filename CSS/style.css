@@ -693,7 +693,7 @@ header .container .logo img {
     width: 100%;
     border: none;
     background-color: #00C517;
-    border-bottom: 3px solid  var(--light);
+    border-bottom: 2px solid  var(--light);
     padding: 10px 0;
     outline: none;
     color: var(--light);
@@ -713,7 +713,9 @@ header .container .logo img {
     width: fit-content;
     color: var(--light);
     font-weight: 300;
-    font-size: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
     line-height: 29px;
     position: absolute;
     right: 0;
@@ -741,7 +743,7 @@ footer .container span {
     display: block;
     padding: 15px 0 0;
     text-align: left;
-    border-top: 2px solid var(--light);
+    border-top: 1px solid var(--light);
     color: var(--light);
     font-weight: 300;
     font-size: 15px;
