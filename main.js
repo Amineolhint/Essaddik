@@ -46,3 +46,13 @@ function sendEmail(){
     message => alert("sent succesfully")
 );
 }
+
+// testimonials carousel
+
+$(document).ready(function(){
+    $(".testimonials__carousel").owlCarousel({
+        autoWidth: true,
+        dots: false,
+        nav: true,
+    });
+});
