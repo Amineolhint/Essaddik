@@ -227,9 +227,7 @@
                 <input type="submit" value="Get Started">
                 </div>
             </form>
-            <div class="maps">
-                #
-            </div>
+            <div class="maps"></div>
         </div>
     </section>
 
@@ -254,21 +252,6 @@
 
     <!------------- JS  ------------->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "username",
-                Password : "password",
-                To : 'them@website.com',
-                From : "you@isp.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
-    </script>
     <script src="main.js" ></script>
 </body>
 </html>
