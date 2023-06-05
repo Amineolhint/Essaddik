@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!------------- CSS ------------->
         <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="stylesheet" href="lib/dist/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="CSS/normalize.css" />
         <!------------- Font Awesome ------------->
         <link rel="stylesheet" href="CSS/all.min.css" />
@@ -179,8 +180,7 @@
 
     <section class="testimonials">
         <h1 class="main-title">Testimonials</h1>
-        <div class="container">
-            <div class="arrow-left"><i class="fa-solid fa-angles-left"></i></div>
+        <div class="container testimonials__carousel">
             <div class="box">
                 <img src="images/manqq.png" >
                 <div class="text">
@@ -191,7 +191,26 @@
                     <h2>JOHN MENSON</h2>
                 </div>
             </div>
-            <div class="arrow-right"><i class="fa-solid fa-angles-right"></i></div>
+            <div class="box">
+                <img src="images/manqq.png" >
+                <div class="text">
+                    <p>Working with Klia was amazing, I didn't request the normal
+                        storyboard type video. I requested something a little
+                        different but he did not fail to provide me with great service
+                        and an excellent product.</p>
+                    <h2>JOHN MENSON</h2>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/manqq.png" >
+                <div class="text">
+                    <p>Working with Klia was amazing, I didn't request the normal
+                        storyboard type video. I requested something a little
+                        different but he did not fail to provide me with great service
+                        and an excellent product.</p>
+                    <h2>JOHN MENSON</h2>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -203,7 +222,18 @@
 
 
     <!------------- JS  ------------->
-
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="main.js" ></script>
+    <script src="lib/dist/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".testimonials__carousel").owlCarousel({
+                autoWidth: true,
+                dots: false,
+                nav: true,
+            });
+        });
+    </script>
 </body>
 </html>
