@@ -349,7 +349,6 @@ header .container .logo img {
 .company .content {
     display: flex;
     align-items: center;
-
     animation: move-slide 25s linear infinite ;
     width: calc(350px * 9);
 }
