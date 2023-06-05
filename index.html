@@ -199,11 +199,76 @@
 
 
     <!------------ END TESTIMONIALS ------------->
+    <!------------ START CONTACT ------------->
+
+
+
+    <section class="contact" id="Contact">
+        <h1 class="main-title">Tell me about your <br> Next Project</h1>
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+
+                <div class="input-data">
+                    <input class="input" type="text" id="name" required>
+                    <label>Name</label>
+                </div>
+
+                <div class="input-data">
+                    <input class="input" type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-data">
+                    <textarea id="message" required></textarea>
+                    <label >Message</label>
+                </div>
+
+                <div class="input-data">
+                <input type="submit" value="Get Started">
+                </div>
+            </form>
+            <div class="maps">
+                #
+            </div>
+        </div>
+    </section>
+
+
+    <!------------ END CONTACT ------------->
+    <!------------ START FOOTER ------------->
+
+
+
+    <footer>
+        <div class="container">
+            <span>© 2023 All rights reserved.</span>
+        </div>
+    </footer>
+
+
+
+
+    <!------------ END FOOTER ------------->
 
 
 
     <!------------- JS  ------------->
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
     <script src="main.js" ></script>
 </body>
 </html>
