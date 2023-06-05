@@ -657,6 +657,7 @@ header .container .logo img {
     margin-left: auto;
     margin-bottom: 0;
     margin-top: var(--padding-top);
+    margin-bottom: var(--padding-bottom);
     display: flex;
     justify-content: center;
     position: relative;
@@ -738,6 +739,133 @@ header .container .logo img {
 
 
 /* -----------END TESTIMONIALS--------- */
+/* -----------START CONTACT--------- */
+
+
+
+.contact {
+    background-color: var(--primary);
+    border-radius: 50px 50px 0 0;
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+    position: relative;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+@media (max-width: 992px) {
+    .contact .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .container form {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .contact .container .maps {
+        width: 100% !important;
+    }
+}
+
+
+.contact .container form {
+    flex-basis: 50%;
+    width: 100%;
+}
+
+.contact .container form .input-data {
+    position: relative;
+    display: block;
+}
+.contact .container form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light);
+    pointer-events: none;
+    transition: var(--transition);
+}
+.contact .container form input:focus ~ label,
+.contact .container form textarea:focus ~ label,
+.contact .container form input:valid ~ label,
+.contact .container form textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--dark);
+}
+
+.contact .container form .input,
+.contact .container form textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    background-color: #00C517;
+    border-bottom: 2px solid  var(--light);
+    padding: 10px 0;
+    outline: none;
+    color: var(--light);
+    font-size: 16px;
+}
+
+.contact .container form textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+}
+
+.contact .container form input[type="submit"] {
+    background-color: var(--dark);
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    color: var(--light);
+    font-weight: 300;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    line-height: 29px;
+    position: absolute;
+    right: 0;
+}
+
+.contact .container .maps {
+    width: 50%;
+    height: 300px;
+    background-color: var(--light);
+    border-radius: 30px;
+}
+
+
+
+
+/* -----------START FOOTER--------- */
+
+
+footer {
+    background-color: var(--primary);
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+footer .container span {
+    display: block;
+    padding: 15px 0 0;
+    text-align: left;
+    border-top: 1px solid var(--light);
+    color: var(--light);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+
+/* -----------END FOOTER--------- */
 
 
 
