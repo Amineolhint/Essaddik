@@ -27,7 +27,7 @@
     <header>
         <div class="container">
             <ul class="navbar">
-                <li><a href="#Home" class="active">HOME</a></li>
+                <li><a href="#Home">HOME</a></li>
                 <li><a href="#Services">SERVICES</a></li>
                 <a class="logo" href="#Home"><img src="images/Group 1.png"></a>
                 <li><a href="#Work">WORK</a></li>
@@ -136,7 +136,7 @@
                 <div class="box  Motion">
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
-                        <div class="video__play">
+                        <div class="video video__play">
                             <img src="images/ww1.png">
                             <div class="play-icon">
                                 <i class="fa-brands fa-youtube"></i>
@@ -149,9 +149,15 @@
                     </div>
                     <div class="video">
                         <div class="lamps lamp-center lamp-video"></div>
+                        <div class="video video__play">
                         <img src="images/ww3.png">
                         <div class="play-icon">
                             <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        </div>
+                        <div class="video__modal">
+                            <button class="video__close"></button>
+                            <iframe src="https://www.youtube.com/embed/5c1R7l3ueCw?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -281,7 +287,8 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="main.js" ></script>
     <script src="lib/dist/owl.carousel.min.js"></script>
-
+    
+    <!-- // send message Email -->
     <script>
         $(document).ready(function(){
             $(".testimonials__carousel").owlCarousel({
@@ -291,6 +298,19 @@
                 nav: true,
             });
         });
+        function sendEmail(){
+            Email.send({
+                SecureToken : "9e12ff21-55d9-49f5-b732-7819da239bb7",
+                To : 'essaddikkliaa@gmail.com',
+                From : "essaddikkliaa@gmail.com",
+                Subject : "test email",
+                Body : "name: " + document.getElementById("name").value
+                        + "<br> email" + document.getElementById("email").value
+                        + "<br> message" + document.getElementById("message").value
+            }).then(
+            message => alert("sent succesfully")
+        );
+        }
     </script>
 </body>
 </html>

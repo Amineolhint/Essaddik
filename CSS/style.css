@@ -138,8 +138,7 @@ header .container .navbar li a {
     transition: all var(--transition);
 }
 
-header .container .navbar li:hover a,
-header .container .navbar li .active {
+header .container .navbar li:hover a {
     color: var(--primary);
 }
 
@@ -508,7 +507,12 @@ header .container .logo img {
     position: relative;
     cursor: pointer;
 }
-
+@media (max-width: 768px) {
+    .content .video {
+        width: 100%;
+        height: 200px;
+    }
+}
 .content .video img {
     width: 100%;
     height: 100%;
@@ -550,17 +554,24 @@ header .container .logo img {
 }
 
 .video__modal iframe {
-    width: 800px;
-    height: 450px;
+    width: 80%;
+    height: 80%;
     position: absolute;
-    top: 50px;
-    left: calc(50% - 400px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--light);
+}
+@media (max-width: 768px) {
+    .video__modal iframe {
+        height: 50%;
+    }
 }
 
 .video__modal button {
     width: 30px;
     height: 30px;
-    background-image: url("../images/x-square-fill.svg");
+    background-image: url("../images/x-lg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -568,8 +579,8 @@ header .container .logo img {
     background-color: transparent;
     cursor: pointer;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 30px;
 }
 
 .content .video:hover .play-icon i {
@@ -606,7 +617,7 @@ header .container .logo img {
 }
 
 .testimonials__carousel .owl-item:not(:last-of-type) {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .testimonials .owl-nav button {
@@ -630,7 +641,7 @@ header .container .logo img {
 }
 
 .testimonials__carousel .owl-next {
-    right: -50px;
+    right: -90px;
     background-image: url("../images/arrow-right-circle.svg");
 }
 
@@ -641,7 +652,7 @@ header .container .logo img {
 }
 
 .testimonials__carousel .owl-prev {
-    left: -50px;
+    left: -90px;
     background-image: url("../images/arrow-left-circle.svg");
 }
 
@@ -652,7 +663,7 @@ header .container .logo img {
 }
 
 .testimonials .container {
-    width: 620px;
+    width: 670px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 0;
@@ -672,11 +683,13 @@ header .container .logo img {
 
 .testimonials .container .box {
     padding: 20px;
-    width: 580px;
+    width: 650px;
     background-color: #00C517;
     border-radius: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    cursor: grab;
 }
 
 @media only screen and (max-width: 850px) {
