@@ -332,7 +332,7 @@ header .container .logo img {
 
 
 .company {
-    margin-top: -3z;
+    margin-top: -10px;
     background-color: #171717bd;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -351,8 +351,7 @@ header .container .logo img {
 .company .slider {
     display: flex;
     align-items: center;
-    -webkit-animation: move-slide 25s linear infinite ;
-            animation: move-slide 25s linear infinite ;
+    animation: move-slide 25s linear infinite ;
     width: calc(350px * 9);
 }
 
@@ -952,23 +951,6 @@ footer .container span {
 
 
 
-
-@-webkit-keyframes move-slide {
-    0% {
-        transform: translateX(0);
-    }
-    33% {
-        transform: translateX(calc(-50px * 2));
-    }
-    66% {
-        transform: translateX(-250px);
-    }
-    99% {
-        transform: translateX(0);
-    }
-    
-}
-
 @keyframes move-slide {
     0% {
         transform: translateX(0);
@@ -986,21 +968,6 @@ footer .container span {
 }
 
 @media (max-width: 992px) {
-    @-webkit-keyframes move-slide {
-        0% {
-            transform: translateX(0);
-        }
-        33% {
-            transform: translateX(calc(-250px * 3.5));
-        }
-        66% {
-            transform: translateX(-250px);
-        }
-        99% {
-            transform: translateX(0);
-        }
-        
-    }
     @keyframes move-slide {
         0% {
             transform: translateX(0);
