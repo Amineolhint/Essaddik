@@ -253,7 +253,7 @@ header .container .logo img {
     }
 }
 
-.company .content {
+.company .slider {
     display: flex;
     align-items: center;
     -webkit-animation: move-slide 25s linear infinite ;
@@ -261,13 +261,12 @@ header .container .logo img {
     width: calc(350px * 9);
 }
 
-.company .content .box {
+.company .slider .info {
     padding: 10px 60px;
     width: 276px;
-    display: block !important;
 }
 
-.company .content .box img {
+.company .slider .info img {
     max-width: 100%;
     height: 100%;
 }
@@ -573,7 +572,7 @@ header .container .logo img {
 }
 
 .testimonials .container {
-    width: 690px;
+    width: 700px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 0;
@@ -593,7 +592,7 @@ header .container .logo img {
 
 .testimonials .container .box {
     padding: 20px;
-    width: 640px;
+    width: 650px;
     background-color: #00C517;
     border-radius: 20px;
     display: flex;
