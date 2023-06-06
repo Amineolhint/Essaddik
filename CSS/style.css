@@ -3,6 +3,101 @@
 
 
 
+/* ----------START GLOBAL RULES----------- */
+
+:root {
+    --primary: #00C517;
+    --light: #F2F2F2;
+    --dark: #000000;
+    --main-dark: #171717;
+    --p-color: #777;
+    --transition: .5s;
+    --padding-top: 50px;
+    --padding-bottom: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* SMALL */
+@media (min-width: 767px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* MEDIUM */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* LARGE */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* START LAMPS */
+
+.lamps {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background-color: #00c517f9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 150px 80px #00c517f8;
+    -webkit-box-shadow: 0px 0px 150px 80px #00c517f8;
+    -moz-box-shadow: 0px 0px 150px 80px #00c517f8;
+    z-index: -1;
+}
+
+/* END LAMPS */
+/* START MAIN-TITLE */
+
+.main-title {
+    text-align: center;
+    font-size: 40px;
+    color: var(--light);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+
+}
+
+/* END MAIN-TITLE */
+
+/* ----------END GLOBAL RULES----------- */
+
+
 /* -----------START NAVBSR-------------- */
 
 
@@ -802,3 +897,128 @@ footer .container span {
 
 
 /* -----------END FOOTER--------- */
+
+
+
+
+
+/* -----------START ANIMATION--------- */
+
+
+
+@-webkit-keyframes move-hello {
+    0%, 20%{
+        transform: rotate(0deg);
+    }
+    20%, 30%{
+        transform: rotate(0deg);
+    }
+    30%, 50%{
+        transform: rotate(25deg);
+    }
+    50%, 70%{
+        transform: rotate(0deg);
+    }
+    70%, 90%{
+        transform: rotate(20deg);
+    }
+    90%, 100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+@keyframes move-hello {
+    0%, 20%{
+        transform: rotate(0deg);
+    }
+    20%, 30%{
+        transform: rotate(0deg);
+    }
+    30%, 50%{
+        transform: rotate(25deg);
+    }
+    50%, 70%{
+        transform: rotate(0deg);
+    }
+    70%, 90%{
+        transform: rotate(20deg);
+    }
+    90%, 100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+@-webkit-keyframes move-slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(calc(-50px * 2));
+    }
+    66% {
+        transform: translateX(-250px);
+    }
+    99% {
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes move-slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(calc(-50px * 2));
+    }
+    66% {
+        transform: translateX(-250px);
+    }
+    99% {
+        transform: translateX(0);
+    }
+    
+}
+
+@media (max-width: 992px) {
+    @-webkit-keyframes move-slide {
+        0% {
+            transform: translateX(0);
+        }
+        33% {
+            transform: translateX(calc(-250px * 3.5));
+        }
+        66% {
+            transform: translateX(-250px);
+        }
+        99% {
+            transform: translateX(0);
+        }
+        
+    }
+    @keyframes move-slide {
+        0% {
+            transform: translateX(0);
+        }
+        33% {
+            transform: translateX(calc(-250px * 3.5));
+        }
+        66% {
+            transform: translateX(-250px);
+        }
+        99% {
+            transform: translateX(0);
+        }
+        
+    }
+}
+
+
+
+
+/* -----------END ANIMATION--------- */
