@@ -1,0 +1,121 @@
+
+/* -----------START ANIMATION--------- */
+
+
+
+@-webkit-keyframes move-hello {
+    0%, 20%{
+        transform: rotate(0deg);
+    }
+    20%, 30%{
+        transform: rotate(0deg);
+    }
+    30%, 50%{
+        transform: rotate(25deg);
+    }
+    50%, 70%{
+        transform: rotate(0deg);
+    }
+    70%, 90%{
+        transform: rotate(20deg);
+    }
+    90%, 100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+@keyframes move-hello {
+    0%, 20%{
+        transform: rotate(0deg);
+    }
+    20%, 30%{
+        transform: rotate(0deg);
+    }
+    30%, 50%{
+        transform: rotate(25deg);
+    }
+    50%, 70%{
+        transform: rotate(0deg);
+    }
+    70%, 90%{
+        transform: rotate(20deg);
+    }
+    90%, 100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+@-webkit-keyframes move-slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(calc(-50px * 2));
+    }
+    66% {
+        transform: translateX(-250px);
+    }
+    99% {
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes move-slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(calc(-50px * 2));
+    }
+    66% {
+        transform: translateX(-250px);
+    }
+    99% {
+        transform: translateX(0);
+    }
+    
+}
+
+@media (max-width: 992px) {
+    @-webkit-keyframes move-slide {
+        0% {
+            transform: translateX(0);
+        }
+        33% {
+            transform: translateX(calc(-250px * 3.5));
+        }
+        66% {
+            transform: translateX(-250px);
+        }
+        99% {
+            transform: translateX(0);
+        }
+        
+    }
+    @keyframes move-slide {
+        0% {
+            transform: translateX(0);
+        }
+        33% {
+            transform: translateX(calc(-250px * 3.5));
+        }
+        66% {
+            transform: translateX(-250px);
+        }
+        99% {
+            transform: translateX(0);
+        }
+        
+    }
+}
+
+
+
+
+/* -----------END ANIMATION--------- */
