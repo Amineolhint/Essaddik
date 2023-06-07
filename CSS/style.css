@@ -933,13 +933,12 @@ footer .container span {
 }
 
 
-
 @-webkit-keyframes move-slide {
     0% {
         transform: translateX(0);
     }
     33% {
-        transform: translateX(calc(-50px * 2));
+        transform: translateX(calc(-50px * 3));
     }
     66% {
         transform: translateX(-250px);
@@ -949,15 +948,12 @@ footer .container span {
     }
     
 }
-
-
-
 @keyframes move-slide {
     0% {
         transform: translateX(0);
     }
     33% {
-        transform: translateX(calc(-50px * 2));
+        transform: translateX(calc(-150px * 3));
     }
     66% {
         transform: translateX(-250px);
@@ -967,6 +963,7 @@ footer .container span {
     }
     
 }
+
 
 @media (max-width: 992px) {
     @-webkit-keyframes move-slide {
