@@ -41,6 +41,18 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $(".slider").owlCarousel({
+        autoWidth: true,
+        dots: false,
+        nav: false,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 1500,
+        autoplayHoverPause: true,
+    });
+});
+
 // send message Email
 
 function sendEmail(){
