@@ -19,13 +19,11 @@ tabsArray.forEach((ele) => {
 });
 
 $('.video__play').click(function(){
-    console.log($(this), $(this).find('.video__modal'));
     $(this).next().addClass('show');
 });
 
 $('.video__close').click(function(){
 	$(this).next()[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-    console.log($(this).parent());
     $(this).parent().removeClass('show');
 });
 
@@ -48,7 +46,7 @@ $(document).ready(function(){
         nav: false,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 1500,
+        autoplayTimeout: 2500,
         autoplayHoverPause: true,
     });
 });
